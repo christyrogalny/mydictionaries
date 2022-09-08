@@ -1,0 +1,5 @@
+#used to ignore files
+.venv/
+#   *csv    #this will ignore any csv file
+#the / means to ignore everything below it 
+#EX: quiz_venv/
