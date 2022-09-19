@@ -131,10 +131,10 @@ print('*****  start section 6 - using get and clear ********')
 print()
 
 
-phone = phonebook.get("Chris", "key not found") #get method...chris is in phonebook so it displays his phonenumber
+phone = phonebook.get("Chri", "key not found") #get method...chris is in phonebook so it displays his phonenumber
 print(phone)                                    #if name is not found, will display 'key not found'
 
-#phonebook.clear()
+#phonebook.clear() #clears out element of phonebook
 #print(phonebook)
 
 
@@ -147,9 +147,12 @@ print()
 print()
 print('*****  start section 7 - using pop method ********')
 print()
+#pop method = gives you key value pair and deletes it from the dictionary
 
+#a = phonebook.pop('Chris', 'not found') #finds key and pops it out of the dictionary 
 
-
+##print(a)
+#print(phonebook)
 
 
 
@@ -157,14 +160,19 @@ print()
 print('*****  end section 7 ********')
 print()
 
-'''
+
 
 print()
 print('*****  start section 8 - using popitem ********')
 print()
+#gives you both key and value(aka tuple) - randomly select a key and value pair (when it works)
 
 
+#print(phonebook)
+#a = phonebook.popitem() #pops it out of the dictionary but the random part does not work
 
+#print(a)
+#print(phonebook) 
 
 
 
@@ -178,18 +186,22 @@ print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
+#long method
+list_of_keys = list(phonebook)
+print(list_of_keys)
+random_key = random.choice(list_of_keys) #selects a random key from dictionary
+print(random_key)
+random_value = phonebook[random_key] #to get a random value instead of key
+print(random_value)
 
+
+#alternatively
+#short method
+random_value = phonebook[random.choice(list(phonebook))]
+print(random_value)
 
 
 
 print()
 print('*****  end section 9 ********')
 print()
-
-
-'''
-
-
-
-
-

@@ -1,6 +1,6 @@
 # 1) print out the value for the key 'history' using the dictionary below
 
-
+#sampleDict has only one key = "class"
 sampleDict = { 
    "class":{ 
       "student":{ 
@@ -13,13 +13,18 @@ sampleDict = {
    }
 }
 
+print(sampleDict['class']['student']['marks']['history'])
 
 
 
 # 2) Add 2 inches to the son's height.
 
 dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's weight": 25}
+#hard code if it asks you to set to a certain value
+#its asking you to add 2 inches
 
+dict["son's height"] += 2
+print(dict)
 
 
 
@@ -32,7 +37,8 @@ sampleDict = {
      'emp3': {'name': 'Brad', 'salary': 6500}
 }
 
-
+sampleDict["emp3"]["salary"] = 8500
+print(sampleDict)
 
 
 
@@ -42,4 +48,5 @@ sampleDict = {
 
 dict={"name": "Plato", "country": "Ancient Greece", "born": -427, "teacher": "Socrates", "student": "Aristotle"}
 
-
+dict['work'] = ["Apology", "Phaedo", "Republic", "Symposium"] #added new key value pair to our dictionary
+print(dict)
